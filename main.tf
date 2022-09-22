@@ -14,15 +14,14 @@ provider "azurerm" {
 
 module "ResourceGroup"{
     source = "./ResourceGroup"
-    base_name = "terraform08"
+    resource_group_name = "terraform08"
     location = "east us"
     
 }
 
-/* module "StorageAccount"{
+module "StorageAccount"{
     source = "./StorageAccount"
-    base_name = "terraform08"
-    resource_group_name  = module.ResourceGroup.rg_name_out
+    resource_group_name  =  "terraform08"
     location = "east us"
     
-}- */
+}
