@@ -19,10 +19,10 @@ module "ResourceGroup"{
     
 }
 
-module "StorageAccount"{
+/* module "StorageAccount"{
     source = "./StorageAccount"
     base_name = "terraform08"
     resource_group_name  = module.ResourceGroup.rg_name_out
     location = "east us"
     
-}
+}- */
